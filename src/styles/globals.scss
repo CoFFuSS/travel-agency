@@ -47,52 +47,52 @@ h1 {
 
   @include respond('phone') {
     font-size: $f28;
-    line-height: 36px;
+    line-height: $s36;
+  }
+
+  font-size: $f56;
+  line-height: $s64;
+}
+
+h2 {
+  @include respond('tablet') {
+    font-size: $f32;
+    line-height: $s24;
+  }
+
+  @include respond('phone') {
+    font-size: $f24;
+    line-height: $s32;
   }
 
   font-size: $f48;
   line-height: $s64;
 }
 
-h2 {
-  @include respond('tablet') {
-    font-size: $f28;
-    line-height: 36px;
-  }
-
-  @include respond('phone') {
-    font-size: $f24;
-    line-height: 32px;
-  }
-
-  font-size: $f36;
-  line-height: $s48;
-}
-
 h3 {
   @include respond('tablet') {
     font-size: $f24;
-    line-height: 32px;
+    line-height: $s32;
   }
 
   @include respond('phone') {
     font-size: $f20;
-    line-height: 28px;
+    line-height: $s28;
   }
 
-  font-size: $f28;
-  line-height: 36px;
+  font-size: $f36;
+  line-height: $s24;
 }
 
 h4 {
   @include respond('tablet') {
     font-size: $f20;
-    line-height: 32px;
+    line-height: $s32;
   }
 
   @include respond('phone') {
     font-size: $f16;
-    line-height: 24px;
+    line-height: $s24;
   }
 
   font-size: $f24;
@@ -122,11 +122,11 @@ h6 {
 p {
   @include respond('tablet') {
     font-size: $f14;
-    line-height: 20px;
+    line-height: $s16;
   }
 
   font-size: $f16;
   font-weight: 400;
-  line-height: $s24;
-  color: $gray;
+  line-height: 18px;
+  color: $dark-gray;
 }
