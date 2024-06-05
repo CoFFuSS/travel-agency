@@ -9,5 +9,14 @@
       "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
       "readMoreBtn": "Read More"
     }
+  },
+
+  "header": {
+    "links": {
+      "Home": "Home",
+      "Rooms": "Rooms",
+      "About": "About Us",
+      "Contact": "Contact Us"
+    }
   }
 }

@@ -1,0 +1,79 @@
+{
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.guides.bracketPairs": "active",
+  "workbench.list.smoothScrolling": true,
+  "files.autoSave": "afterDelay",
+  "material-icon-theme.activeIconPack": "react_redux",
+  "material-icon-theme.folders.associations": {},
+  "json.maxItemsComputed": 10000,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "breadcrumbs.enabled": false,
+  "highlight-matching-tag.styles": {
+    "opening": {
+      "name": {
+        "underline": "red",
+        "highlight": "none"
+      }
+    }
+  },
+  "highlight-matching-tag.showRuler": true,
+  "editor.stickyScroll.enabled": true,
+  "discord.removeRemoteRepository": true,
+  "discord.lowerDetailsEditing": "Editing {file_name}",
+  "discord.lowerDetailsDebugging": "Debugging {file_name}",
+  "discord.detailsEditing": "In folder {dir_name}",
+  "discord.detailsDebugging": "In folder {dir_name}",
+  "tabnine.experimentalAutoImports": true,
+  "editor.fontLigatures": true,
+  "editor.fontWeight": 400,
+  "editor.mouseWheelZoom": true,
+  "editor.fontSize": 16,
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.formatDocument": "explicit",
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit"
+  },
+  "[css]": {
+    "editor.suggest.insertMode": "replace"
+  },
+  "editor.linkedEditing": true,
+  "editor.insertSpaces": false,
+  "editor.detectIndentation": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "typescript.suggest.enabled": true,
+  "emmet.includeLanguages": { "javascript": "javascriptreact" },
+  "emmet.triggerExpansionOnTab": true,
+  "files.eol": "\n",
+  "gitlens.rebaseEditor.ordering": "asc",
+  "workbench.editorAssociations": {
+    "git-rebase-todo": "default"
+  },
+  "terminal.integrated.env.windows": {},
+  "terminal.integrated.fontFamily": "monospace",
+  "editor.fontFamily": "Fira Code",
+  "window.zoomLevel": 0.1,
+  "stylelint.validate": ["css", "scss", "typescript", "typescriptreact"],
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": false
+  },
+  "cSpell.words": [
+		"MAPBOX",
+		"Modsen",
+		"svgr",
+		"testid"
+	]
+}

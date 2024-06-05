@@ -1,0 +1,41 @@
+.burger {
+  @include respond('desktop') {
+    cursor: pointer;
+
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    width: $s32;
+    height: $s20;
+
+    background: none;
+    border: none;
+    outline: none;
+  }
+
+  display: none;
+
+  .line {
+    width: 100%;
+    height: $s2;
+    background-color: $black;
+    transition: all 0.3s ease;
+  }
+
+  &.open {
+    .line:nth-child(1) {
+      transform: rotate(45deg) translate($s4, $s4);
+    }
+
+    .line:nth-child(2) {
+      opacity: 0;
+    }
+
+    .line:nth-child(3) {
+      transform: rotate(-45deg) translate($s8, -$s8);
+    }
+  }
+}
