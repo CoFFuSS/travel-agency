@@ -1,0 +1,18 @@
+$breakpoints: (
+  'desktopLg': 1280px,
+  'desktop': 992px,
+  'tabletLg': 900px,
+  'tablet': 768px,
+  'phone': 576px,
+);
+
+@mixin respond($breakpoint) {
+  /* stylelint-disable-next-line scss/no-global-function-names */
+  $point: map-get($breakpoints, $breakpoint);
+
+  @if $point {
+    @media (max-width: $point) {
+      @content;
+    }
+  }
+}
