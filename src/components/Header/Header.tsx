@@ -8,7 +8,6 @@ import Link from 'next/link';
 
 import { navLinks } from '@/constants/navLinks';
 import logo from '@/assets/icons/logo.svg';
-import uk from '@/assets/images/UK.png';
 import Burger from '@/components/Burger/Burger';
 import NavigationLink from '@/components/NavigationLink/NavigationLink';
 import { routes } from '@/constants/routes';
@@ -52,10 +51,7 @@ export default function Header() {
             ))}
           </ul>
         </nav>
-        <Image
-          src={uk}
-          alt='United-Kingdom'
-        />
+
         <LanguageSwitcher />
       </div>
     </header>

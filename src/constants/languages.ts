@@ -1,4 +1,7 @@
+import uk from '@/assets/images/UK.png';
+import rf from '@/assets/images/RF.jpg';
+
 export const languages = [
-  { code: 'en', flag: '/src/assets/images/UK.png' },
-  { code: 'ru', flag: '/src/assets/images/RF.jpg' },
+  { code: 'en', flag: uk },
+  { code: 'ru', flag: rf },
 ];

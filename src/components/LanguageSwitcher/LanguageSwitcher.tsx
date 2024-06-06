@@ -15,34 +15,31 @@ export default function LanguageSwitcher() {
   const locale = useLocale();
   const [isPending, startTransition] = useTransition();
 
-  const handleSelectChange = () => {
+  const handleLanguageChange = (languageCode: string) => {
     startTransition(() => {
-      router.push(pathName, { locale });
+      router.push(pathName, { locale: languageCode });
     });
   };
 
   return (
-    <div className={styles.selector}>
-      <select
-        value={locale}
-        onChange={handleSelectChange}
-      >
-        {languages.map((language) => (
-          <option
-            key={language.code}
-            value={language.code}
-          >
-            <Image
-              width={53}
-              height={40}
-              src={language.flag}
-              alt={language.code}
-              className={`${styles.flag} ${locale === language.code ? styles.selected : ''}`}
-            />
-          </option>
-        ))}
-      </select>
-      <h6>{isPending}</h6>
+    <div className={styles.switcher}>
+      {languages.map((language) => (
+        <button
+          key={language.code}
+          onClick={() => handleLanguageChange(language.code)}
+          className={styles.button}
+          type='button'
+        >
+          <Image
+            width={40}
+            height={30}
+            src={language.flag}
+            alt={language.code}
+            className={`${styles.flag} ${locale === language.code ? styles.selected : ''}`}
+          />
+        </button>
+      ))}
+      <h6>{isPending ? 'Loading...' : ''}</h6>
     </div>
   );
 }

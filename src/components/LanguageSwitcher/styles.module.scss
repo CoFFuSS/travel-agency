@@ -1,34 +1,37 @@
-.selector {
+.switcher {
   display: flex;
-  flex-direction: column;
+  gap: 10px;
   align-items: center;
 
-  .container {
+  .button {
+    cursor: pointer;
+
     display: flex;
-    gap: $s12;
-    justify-content: center;
-    margin-top: $s12;
+    align-items: center;
 
-    label {
-      input {
-        display: none;
-      }
+    padding: 0;
 
-      .flag {
-        cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+  }
 
-        width: 53px;
-        height: 40px;
+  .flag {
+    width: 40px;
+    height: 30px;
+    opacity: 0.7;
+    transition:
+      opacity 0.3s ease,
+      transform 0.3s ease;
 
-        opacity: 0.7;
-
-        transition: opacity 0.3s ease;
-
-        &.selected {
-          opacity: 1;
-          border: 2px solid #000;
-        }
-      }
+    &.selected {
+      transform: scale(1.1);
+      opacity: 1;
+      border: 2px solid #000;
     }
+  }
+
+  h6 {
+    margin-top: 10px;
   }
 }
