@@ -1,0 +1,25 @@
+.input {
+  max-height: $s56;
+  padding: $s16 $s24;
+
+  color: $white;
+
+  background-color: inherit;
+  border: 1px solid;
+}
+
+.primary {
+  color: $gray;
+  background-color: $white;
+  border-color: $white;
+  border-radius: $s4;
+
+  ::placeholder {
+    color: $gray;
+  }
+}
+
+.secondary {
+  color: $light-gray;
+  border-color: $gray;
+}

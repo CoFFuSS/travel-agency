@@ -3,13 +3,13 @@
 }
 
 .active {
-  color: $violet;
+  color: $black;
 }
 
 .inactive {
   color: $white;
 
   &:hover {
-    color: $violet;
+    color: $black;
   }
 }

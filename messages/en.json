@@ -18,5 +18,44 @@
       "About": "About Us",
       "Contact": "Contact Us"
     }
+  },
+
+  "footer": {
+    "view": "Paradise view",
+    "about": "The service at the Hotel Monteleone was exceptional. There was absolutely no issue that was not addressed timely and with satisfactory results. We were particulary impressed with how the hotel staff anticipated our needs (periodically coming by the Board Room to check with us)",
+    "links": {
+      "quickLinks": {
+        "name": "Quick links",
+        "roomBooking": "",
+        "rooms": "Rooms",
+        "contact": "Contact",
+        "explore": "Explore"
+      },
+
+      "company": {
+        "name": "Company",
+        "privacy": "Privacy policy",
+        "refund": "Refund policy",
+        "faq": "F.A.Q",
+        "about": "About"
+      },
+
+      "socials": {
+        "name": "Social media",
+        "facebook": "Facebook",
+        "twitter": "Twitter",
+        "instagram": "Instagram",
+        "youtube": "Youtube"
+      }
+    },
+
+    "bottom": "Paradise view 2024",
+
+    "news": {
+      "newsTitle": "Newsletter",
+      "subscribe": "Kindly subscribe to our newsletter to get latest deals on our rooms and vacation discount.",
+      "input": "Enter your email",
+      "button": "Subscribe"
+    }
   }
 }

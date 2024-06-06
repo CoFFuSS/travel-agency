@@ -1,0 +1,56 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: $s80 $s128;
+  background-color: $brown;
+
+  @include respond('desktop') {
+    padding: $s32 $s24;
+  }
+
+  .section {
+    display: flex;
+    flex-direction: row;
+    gap: $s32;
+    justify-content: space-between;
+
+    padding-bottom: $s64;
+
+    @include respond('desktop') {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .columns {
+      display: flex;
+      flex-direction: column;
+      gap: $s8;
+
+      @include respond('desktop') {
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    .about {
+      display: flex;
+      flex-direction: column;
+      gap: $s12;
+      width: 20%;
+
+      @include respond('desktop') {
+        display: none;
+      }
+    }
+  }
+
+  .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: $s56;
+
+    border-top: 1px solid rgb(217 217 217 / 50%);
+  }
+}

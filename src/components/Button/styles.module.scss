@@ -1,0 +1,36 @@
+.button {
+  @include respond('desktop') {
+    padding: $s16 $s24;
+  }
+
+  @include respond('tablet') {
+    padding: $s16 $s20;
+  }
+
+  cursor: pointer;
+
+  gap: $s12;
+  align-items: center;
+
+  max-height: $s56;
+  padding: $s16 $s48;
+
+  font-size: $f16;
+  font-weight: 700;
+  line-height: $s24;
+
+  border: none;
+}
+
+.button:disabled {
+  background-color: $light-gray;
+}
+
+.primary {
+  color: $white;
+  background-color: $brown;
+
+  &:hover {
+    background-color: $amber;
+  }
+}
