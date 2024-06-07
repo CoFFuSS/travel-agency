@@ -15,7 +15,7 @@ export default function FooterForm() {
   const {
     register,
     handleSubmit,
-    formState: { isDirty, isValid, errors },
+    formState: { isDirty, isValid },
   } = useForm<FooterFormFields>({ resolver: zodResolver(footerFormSchema), mode: 'onChange' });
 
   const translation = useTranslations('footer');
@@ -38,25 +38,25 @@ export default function FooterForm() {
         onSubmit={handleSubmit(handleSendEmail)}
         className={styles.form}
       >
-        <div className={styles.input}>
+        <div className={styles.input_container}>
           <Input
             dataCy='subscribes-email-input'
             type='email'
             variant='primary'
             placeholder={translation('news.input')}
+            className={styles.input}
             {...register('email')}
           />
-          <h5>{errors && errors.email?.message}</h5>
+          <Button
+            disabled={!isDirty || !isValid}
+            dataCy='footer-form-button'
+            variant='primary'
+            isSubmit
+            className={styles.submit}
+          >
+            Subscribe
+          </Button>
         </div>
-
-        <Button
-          disabled={!isDirty || !isValid}
-          dataCy='footer-form-button'
-          variant='primary'
-          isSubmit
-        >
-          Subscribe
-        </Button>
       </form>
     </div>
   );

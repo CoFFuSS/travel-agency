@@ -31,7 +31,7 @@ export default function Footer() {
             ))}
           </div>
         ))}
-        <div>
+        <div className={styles.news}>
           <h5>{translation('news.newsTitle')}</h5>
           <h6>{translation('news.subscribe')}</h6>
           <FooterForm />

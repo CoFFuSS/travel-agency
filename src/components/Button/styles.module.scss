@@ -27,10 +27,16 @@
 }
 
 .primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   color: $white;
+
   background-color: $brown;
+  border-radius: 2.5px;
 
   &:hover {
-    background-color: $amber;
+    background-color: $light-gray;
   }
 }

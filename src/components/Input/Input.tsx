@@ -12,14 +12,18 @@ interface InputProps {
   type: string;
   name: string;
   value?: string;
+  className?: string;
   onChange?: (e: ChangeEvent<HTMLInputElement>) => void;
 }
 
 const Input = forwardRef<HTMLInputElement, InputProps>(
-  ({ placeholder = '', dataCy, type, name, variant, value, onChange, ...restProps }, ref) => (
+  (
+    { placeholder = '', dataCy, type, name, variant, value, className, onChange, ...restProps },
+    ref,
+  ) => (
     <>
       <input
-        className={cn(styles.input, {
+        className={cn(styles.input, className, {
           [styles.primary]: variant === 'primary',
           [styles.secondary]: variant === 'secondary',
         })}
