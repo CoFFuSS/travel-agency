@@ -1,0 +1,43 @@
+.section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding: 0 $s128;
+
+  background-color: $light;
+
+  @include respond('desktop') {
+    flex-direction: column;
+    padding: 0 $s16;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: $s24;
+
+  h2 {
+    font-family: 'Dancing Script', cursive;
+    color: $brown;
+  }
+}
+
+.container {
+  width: 50%;
+
+  @include respond('tablet') {
+    width: 100%;
+  }
+
+  .img {
+    width: 100%;
+    height: auto;
+
+    @include respond('tablet') {
+      width: 100%;
+      height: $s128;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.button {
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+
+  padding: $s12 $s24;
+
+  text-decoration: none;
+
+  border: none;
+  border-radius: 50%;
+
+  transition: background-color 0.3s ease;
+
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: $s40;
+    height: $s40;
+    margin-right: $s12;
+
+    background-color: #009688;
+    border-radius: 50%;
+  }
+
+  .icon::before {
+    content: '';
+
+    display: block;
+
+    width: 0;
+    height: 0;
+
+    border-top: $s8 solid transparent;
+    border-bottom: $s8 solid transparent;
+    border-left: $s12 solid white;
+  }
+}
